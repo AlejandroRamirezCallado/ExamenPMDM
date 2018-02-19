@@ -6,6 +6,8 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
+import com.example.alejandro.examenpmdm.Sqlite.Contact;
+import com.example.alejandro.examenpmdm.Sqlite.DatabaseHandler;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -104,4 +106,9 @@ public class LoginActivity extends AppCompatActivity {
         firebaseAuth.removeAuthStateListener(firebaseAuthListener);
 
     }
+
+    DatabaseHandler databaseHandler = new DatabaseHandler(this);
+    Contact contact = new Contact("alejandro", "550891234");
+    databaseHandler.addContact(contact);
+
 }
