@@ -16,7 +16,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     // All Static variables
     // Database Version
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 3;
 
     // Database Name
     private static final String DATABASE_NAME = "contactsManager";
@@ -58,6 +58,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
+        values.put(KEY_ID, contact.getID());
         values.put(KEY_NAME, contact.getName()); // Contact Name
         values.put(KEY_PH_NO, contact.getPhoneNumber()); // Contact Phone Number
 
