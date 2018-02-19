@@ -15,12 +15,12 @@
         android:textSize="20sp" />
 
     <Button
+        android:id="@+id/logout"
         android:onClick="logout";
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:onClick="logout"
         android:text="@string/logout" />
 
 </RelativeLayout>
