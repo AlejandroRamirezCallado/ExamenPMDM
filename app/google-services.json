@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "994257633804",
+    "firebase_url": "https://android-d56a9.firebaseio.com",
+    "project_id": "android-d56a9",
+    "storage_bucket": "android-d56a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994257633804:android:77784b287ee28f49",
+        "android_client_info": {
+          "package_name": "com.ExamenPMDM.Android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "994257633804-cu2h2jobjknneqvv9gidipvbi6h2rpe9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ExamenPMDM.Android",
+            "certificate_hash": "7807b0e41e3c28796fb65e49ab6df9278e8ed69b"
+          }
+        },
+        {
+          "client_id": "994257633804-gpos5laoccictf47lk9a5935rca90n7a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmefhqzRaCQo6WZf2ZQzmWESj8Dwq36M8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "994257633804-gpos5laoccictf47lk9a5935rca90n7a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
