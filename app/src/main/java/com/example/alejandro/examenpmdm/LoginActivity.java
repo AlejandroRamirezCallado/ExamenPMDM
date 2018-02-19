@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.example.alejandro.examenpmdm.Sqlite.Contact;
@@ -110,5 +111,8 @@ public class LoginActivity extends AppCompatActivity {
     DatabaseHandler databaseHandler = new DatabaseHandler(this);
     Contact contact = new Contact("alejandro", "550891234");
     databaseHandler.addContact(contact);
+    Contact contact1 = databaseHandler.getContact(0);
+    Log.v("loginActivity", "--------->>>" + contact1.getName());
+
 
 }

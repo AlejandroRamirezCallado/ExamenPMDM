@@ -3,6 +3,7 @@ package com.example.alejandro.examenpmdm.Sqlite;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -63,5 +64,20 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         // Inserting Row
         db.insert(TABLE_CONTACTS, null, values);
         db.close(); // Closing database connection
+    }
+
+    public Contact getContact(int id) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = db.query(TABLE_CONTACTS, new String[] { KEY_ID,
+                        KEY_NAME, KEY_PH_NO }, KEY_ID + "=?",
+                new String[] { String.valueOf(id) }, null, null, null, null);
+        if (cursor != null)
+            cursor.moveToFirst();
+
+        Contact contact = new Contact(Integer.parseInt(cursor.getString(0)),
+                cursor.getString(1), cursor.getString(2));
+        // return contact
+        return contact;
     }
 }
