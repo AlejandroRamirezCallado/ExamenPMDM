@@ -111,8 +111,8 @@ public class LoginActivity extends AppCompatActivity {
     DatabaseHandler databaseHandler = new DatabaseHandler(this);
     Contact contact = new Contact(4, "alejandro", "550891234");
     databaseHandler.addContact(contact);
-    Contact contact1 = databaseHandler.getContact(0);
-    Log.v("loginActivity", "--------->>>" + contact1.getName());
+    //Contact contact1 = databaseHandler.getContact(0);
+    Log.v("loginActivity", "--------->>>" + databaseHandler.getAllContacts());
 
 
 }
